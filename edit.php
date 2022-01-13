@@ -22,7 +22,7 @@
                   <?php
                     $phone_models = $model->fetchPhone_models();
                     foreach ($phone_models as $phone_model) {
-                        echo "<option value='{$phone_model['id']}'>{$phone_model['phone_model']}}</option>";
+                        echo "<option value='{$phone_model['id']}'>{$phone_model['phone_model']}</option>";
                     }
                   ?>
                 </select>
