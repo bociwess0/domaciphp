@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 20, 2021 at 05:15 PM
+-- Generation Time: Jan 14, 2022 at 07:00 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.3.31
 
@@ -39,11 +39,8 @@ CREATE TABLE `phones` (
 --
 
 INSERT INTO `phones` (`id`, `phone_brand`, `price`, `phone_model`) VALUES
-(2, 'Apple', 500, 2),
-(3, 'Huawei', 400, 2),
-(4, 'huawei', 132312, 1),
-(5, 'dwadaw', 231312312, 1),
-(6, 'bdtgrdvd', 100, 1);
+(3, 'Huawei', 500, 2),
+(10, 'Samsung', 300, 6);
 
 -- --------------------------------------------------------
 
@@ -61,8 +58,8 @@ CREATE TABLE `phone_models` (
 --
 
 INSERT INTO `phone_models` (`id`, `phone_model`) VALUES
-(1, 'Galaxy s4'),
-(2, 'Iphone X');
+(2, 'Iphone X'),
+(6, 'J5 2017');
 
 --
 -- Indexes for dumped tables
@@ -89,13 +86,13 @@ ALTER TABLE `phone_models`
 -- AUTO_INCREMENT for table `phones`
 --
 ALTER TABLE `phones`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `phone_models`
 --
 ALTER TABLE `phone_models`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables
